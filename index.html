@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+
 </head>
 
 <body>
     <!---------------------------------HEADER------------------------------------>
-    <section class="header">
+    <section id="header">
         <div class="container">
             <img src="images/logo.png" alt="logo" class="logo">
             <div class="header-text">
@@ -33,12 +35,12 @@
     <!-------------------------------SIDE-NAVBAR--------------------------------->
     <nav>
         <ul id="sideNav">
-            <li><a href="">HOME</a></li>
-            <li><a href="">ABOUT US</a></li>
-            <li><a href="">FEATURES</a></li>
-            <li><a href="">COURSES</a></li>
-            <li><a href="">OFFER</a></li>
-            <li><a href="">CONTACT</a></li>
+            <li><a href="#header">HOME</a></li>
+            <li><a href="#about">ABOUT US</a></li>
+            <li><a href="#feature">FEATURES</a></li>
+            <li><a href="#course">COURSES</a></li>
+            <li><a href="#offer">OFFER</a></li>
+            <li><a href="#contact">CONTACT</a></li>
         </ul>
     </nav>
     <img src="images/menu.png" alt="" id="menuBtn">
@@ -102,16 +104,23 @@
     <!---------------------------------COURSES------------------------------------>
 
     <section id="course">
-        <div class="conatiner course-row">
+        <div class="container course-row">
             <div class="course-left-col">
                 <div class="course-text">
                     <h1>Browse Our Top<br>courses</h1>
-                    <p>Lorem ipsum, dolor sit amet consectetur 
+                    <span class="box"></span>
+                    <p>Lorem ipsum, dolor sit amet consectetur
                         adipisicing elit. Atque nobis, dignissimos,
-                         quas delectus dicta vitae nam provident et
-                         beatae quaerat debitis voluptatibus dolores
-                         deleniti aut voluptate quia minus? Repellat,
-                         dignissimos.</p>
+                        quas delectus dicta vitae nam provident et
+                        beatae quaerat debitis voluptatibus dolores
+                        deleniti aut voluptate quia minus? Repellat,
+                        dignissimos.</p>
+                    <button class="common-btn">View All Courses</button>
+                    <div class="line">
+                        <span class="line1"></span><br>
+                        <span class="line2"></span><br>
+                        <span class="line3"></span>
+                    </div>
                 </div>
             </div>
             <div class="course-right-col">
@@ -120,17 +129,114 @@
         </div>
     </section>
 
+    <!---------------------------------------OFFER------------------------------------------->
+
+    <section id="offer">
+        <div class="about-left-col">
+            <img src="images/offer.png" alt="">
+        </div>
+        <div class="about-right-col">
+            <div class="about-text">
+                <h1>Limitless learning<br>limitless possibilities
+                </h1>
+                <span class="box"></span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Veniam iure ullam laudantium eos esse nihil nobis
+                    impedit odio velit recusandae nesciunt facere voluptas
+                    excepturi dicta nisi labore, ipsa accusantium. Quisquam.</p>
+                <button class="common-btn">Start Free Trial</button>
+                <div class="line">
+                    <span class="line1"></span><br>
+                    <span class="line2"></span><br>
+                    <span class="line3"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!---------------------------------------CONTACT------------------------------------------>
+
+    <section id="contact">
+        <div class="container contact-row">
+            <div class="contact-left-col">
+                <h1>Sign Up to join our <br>learning community</h1>
+                <form action="#">
+                <input type="text" placeholder="Enter Name">
+                <input type="email" placeholder="Enter Email">
+                <input type="password" placeholder="Enter Password">
+                    <div class="btn-box">
+                        <button class="common-btn">Sign Up</button>
+                        <button class="common-btn">Start Free Trial</button>
+                    </div>
+                </form>
+                <div class="line">
+                    <span class="line1"></span><br>
+                    <span class="line2"></span><br>
+                    <span class="line3"></span>
+                </div>
+            </div>
+            <div class="contact-right-col">
+                <img src="images/contact.png" alt="">
+            </div>
+        </div>
+</section>
+
+<!---------------------------------------FOOTER------------------------------------------>
+
+<section id="footer">
+    <div class="container footer-row">
+        <hr>
+        <div class="footer-left-col">
+            <div class="footer-links">
+                <div class="link-title">
+                    <h4>Product</h4>
+                    <small>Our Plan</small><br>
+                    <small>Free Trial</small>
+                </div>
+                <div class="link-title">
+                    <h4>About Us</h4>
+                    <small>Request Demo</small><br>
+                    <small>FAQ's</small>
+                </div>
+                <div class="link-title">
+                    <h4>Support</h4>
+                    <small>Features</small><br>
+                    <small>Contact Us</small>
+                </div>
+                <div class="link-title">
+                    <h4>Explore</h4>
+                    <small>Find a nonprofit</small><br>
+                    <small>Corporate solution</small>
+                </div>
+            </div>
+        </div>
+        <div class="footer-right-col">
+            <div class="footer-info">
+                <div class="copyright-text">
+                    <small>support@Xypo.com</small><br>
+                    <small>copyright 2020 Xypo</small>
+                </div>
+                <div class="footer-logo">
+                    <img src="images/logo.png" alt="">
+                    <button class="common-btn">English</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!------------------------------------SOCIAL-ICONS--------------------------------------->
+    
+<div class="social-icons">
+    <img src="images/facebook.png" alt="">
+    <img src="images/instagram.png" alt="">
+    <img src="images/twitter.png" alt="">
+    <img src="images/linkedin.png" alt="">
+</div>
 
 
 
 
-
-
-
-
-
-
-    <!---------------------------------J.S-------------------------------------->
+<!---------------------------------J.S-------------------------------------->
     <script>
         var sideNav = document.getElementById("sideNav");
         var menuBtn = document.getElementById("menuBtn");
@@ -143,8 +249,8 @@
                 sideNav.style.right = "-250px"
             }
         }
+        var scroll = new SmoothScroll('a[href*="#"]',{speed: 1000,speedAsDuration: true});
     </script>
-
 
 </body>
 
