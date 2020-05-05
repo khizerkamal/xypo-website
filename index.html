@@ -9,18 +9,18 @@
 </head>
 
 <body>
-<!---------------------------------HEADER------------------------------------>
+    <!---------------------------------HEADER------------------------------------>
     <section class="header">
         <div class="container">
             <img src="images/logo.png" alt="logo" class="logo">
             <div class="header-text">
                 <h1>The purpose is to<br>teach,bring learning to people</h1>
-                <span  class="box"></span>
+                <span class="box"></span>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Perspiciatis vero voluptatibus aperiam quidem error adipisci
                     rerum ut expedita quibusdam eius, ipsam dolorum, blanditiis
                     cumque totam, dolor harum officiis? Voluptatum, suscipit!</p>
-                    <button class="common-btn">Read More</button>
+                <button class="common-btn">Read More</button>
             </div>
             <div class="line">
                 <span class="line1"></span><br>
@@ -30,34 +30,122 @@
         </div>
     </section>
 
-<!-------------------------------SIDE-NAVBAR--------------------------------->
-<nav>
-    <ul id="sideNav">
-        <li><a href="">HOME</a></li>
-        <li><a href="">ABOUT US</a></li>
-        <li><a href="">FEATURES</a></li>
-        <li><a href="">COURSES</a></li>
-        <li><a href="">OFFER</a></li>
-        <li><a href="">CONTACT</a></li>
-    </ul>
-</nav>
-<img src="images/menu.png" alt="" id="menuBtn">
+    <!-------------------------------SIDE-NAVBAR--------------------------------->
+    <nav>
+        <ul id="sideNav">
+            <li><a href="">HOME</a></li>
+            <li><a href="">ABOUT US</a></li>
+            <li><a href="">FEATURES</a></li>
+            <li><a href="">COURSES</a></li>
+            <li><a href="">OFFER</a></li>
+            <li><a href="">CONTACT</a></li>
+        </ul>
+    </nav>
+    <img src="images/menu.png" alt="" id="menuBtn">
 
-<script>
-    var sideNav = document.getElementById("sideNav");
-    var menuBtn = document.getElementById("menuBtn");
+    <!--------------------------------ABOUT------------------------------------->
 
-    sideNav.style.right = "-250px"
-    menuBtn.onclick = function(){
-        if (sideNav.style.right == "-250px"){
-            sideNav.style.right = "0"
-        } else {
-            sideNav.style.right = "-250px"
+    <section id="about">
+        <div class="about-left-col">
+            <img src="images/about.png" alt="">
+        </div>
+        <div class="about-right-col">
+            <div class="about-text">
+                <h1>About Us</h1>
+                <span class="box"></span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Veniam iure ullam laudantium eos esse nihil nobis
+                    impedit odio velit recusandae nesciunt facere voluptas
+                    excepturi dicta nisi labore, ipsa accusantium. Quisquam.</p><br><br>
+                <div class="line">
+                    <span class="line1"></span><br>
+                    <span class="line2"></span><br>
+                    <span class="line3"></span>
+                </div>
+                <h2>Learning is not attained by chance,it must be sought
+                    for with ardor and attended to with deligence</h2>
+                <h3>----Abigail Adams</h3>
+            </div>
+        </div>
+    </section>
+    <!--------------------------------FEATURES------------------------------------>
+    <section id="feature">
+        <div class="feature-row">
+            <div class="feature-col">
+                <img src="images/pic-1.png" alt="">
+                <h4>Learn Anywhere</h4>
+                <p>Switch between your computer, tablet or mobile device</p>
+            </div>
+            <div class="feature-col">
+                <img src="images/pic-2.png" alt="">
+                <h4>Expert Teachers</h4>
+                <p>Learn from industry experts who are passionate about teaching</p>
+            </div>
+            <div class="feature-col">
+                <img src="images/pic-1.png" alt="">
+                <h4>Unlimited Access</h4>
+                <p>Choose what you'd learn from our extensive subscription
+                    library.
+                </p>
+            </div>
+        </div>
+        <div class="feature-btn">
+            <div class="line">
+                <span class="line1"></span><br>
+                <span class="line2"></span><br>
+                <span class="line3"></span>
+            </div>
+            <button class="common-btn">Start Free Trial</button>
+        </div>
+    </section>
+
+    <!---------------------------------COURSES------------------------------------>
+
+    <section id="course">
+        <div class="conatiner course-row">
+            <div class="course-left-col">
+                <div class="course-text">
+                    <h1>Browse Our Top<br>courses</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur 
+                        adipisicing elit. Atque nobis, dignissimos,
+                         quas delectus dicta vitae nam provident et
+                         beatae quaerat debitis voluptatibus dolores
+                         deleniti aut voluptate quia minus? Repellat,
+                         dignissimos.</p>
+                </div>
+            </div>
+            <div class="course-right-col">
+                <img src="images/course.png" alt="">
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+    <!---------------------------------J.S-------------------------------------->
+    <script>
+        var sideNav = document.getElementById("sideNav");
+        var menuBtn = document.getElementById("menuBtn");
+
+        sideNav.style.right = "-250px"
+        menuBtn.onclick = function () {
+            if (sideNav.style.right == "-250px") {
+                sideNav.style.right = "0"
+            } else {
+                sideNav.style.right = "-250px"
+            }
         }
-    }
-
-</script>
+    </script>
 
 
 </body>
+
 </html>
